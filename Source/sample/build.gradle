@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
+    compileSdkVersion 28
     buildToolsVersion '26.0.2'
 
     defaultConfig {
         applicationId "im.delight.android.examples.webview"
         minSdkVersion 8
-        targetSdkVersion 21
+        targetSdkVersion 28
     }
 
     buildTypes {
@@ -20,4 +20,6 @@ android {
 
 dependencies {
     compile project(':library')
+    compile 'com.android.volley:volley:1.1.1'
+
 }
